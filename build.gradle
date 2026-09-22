@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net/' }
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+group 'com.example.addon'
+version '1.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+minecraft {
+    version = "1.12.2-14.23.5.2847"
+    runDir = "run"
+    mappings = "stable_39"
+}
+
+dependencies {
+    implementation files('libs/solehack-1.0.jar')
+}
+
+jar {
+    manifest {
+        attributes(
+                'Addon-Main': 'com.example.addon.MyCustomAddon'
+        )
+    }
+}

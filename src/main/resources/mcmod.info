@@ -1,0 +1,16 @@
+[
+{
+  "modid": "addon",
+  "name": "Example Addon",
+  "description": "Addon For SoleHack 1.0",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "SoleGazelle3623, Beta Testers, and YOU",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
